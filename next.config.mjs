@@ -15,7 +15,7 @@ const basePath = process.env.NODE_ENV === 'production' ? '/spellbooker' : undefi
 export default defineNextConfig({
   reactStrictMode: true,
   swcMinify: true,
-  images: { domains: ['c1.scryfall.com'] },
+  images: { domains: ['cards.scryfall.io'], unoptimized: true },
   experimental: { images: { allowFutureImage: true, unoptimized: true } },
   basePath
 });
